@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Science Interactives</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -27,6 +27,7 @@
       border-radius: 20px;
       border: 1px solid rgba(0, 0, 0, 0.1);
       transition: all 0.25s ease;
+      cursor: pointer;
     }
 
     .glass:hover {
@@ -35,17 +36,8 @@
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     }
 
-    .btn {
-      @apply px-4 py-2 mt-3 text-sm font-semibold text-black bg-white/70 rounded-xl hover:bg-white transition;
-    }
-
-    h2 {
-      color: #000;
-    }
-
-    p {
-      color: #222;
-    }
+    h2 { color: #000; }
+    p { color: #222; }
   </style>
 </head>
 <body class="flex flex-col items-center justify-center px-6 py-10">
@@ -55,59 +47,50 @@
   <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-6xl w-full">
 
     <!-- Claude Links -->
-    <div class="glass p-6 text-center">
+    <div class="glass p-6 text-center" onclick="openLink('https://claude.ai/public/artifacts/d4d96039-2d5a-4e94-a711-53e990b4a21a')">
       <h2 class="text-xl font-semibold mb-2">Boltzmann</h2>
-      <p class="text-sm mb-4">Statistical physics and energy distributions.</p>
-      <button class="btn" onclick="openLink('https://claude.ai/public/artifacts/d4d96039-2d5a-4e94-a711-53e990b4a21a')">Open</button>
+      <p class="text-sm">Statistical physics and energy distributions.</p>
     </div>
 
-    <div class="glass p-6 text-center">
+    <div class="glass p-6 text-center" onclick="openLink('https://claude.ai/public/artifacts/63ae4df2-cba6-43b7-ba65-1c725fb2b547')">
       <h2 class="text-xl font-semibold mb-2">Demand & Supply</h2>
-      <p class="text-sm mb-4">Market equilibrium and economic behavior.</p>
-      <button class="btn" onclick="openLink('https://claude.ai/public/artifacts/63ae4df2-cba6-43b7-ba65-1c725fb2b547')">Open</button>
+      <p class="text-sm">Market equilibrium and economic behavior.</p>
     </div>
 
-    <div class="glass p-6 text-center">
+    <div class="glass p-6 text-center" onclick="openLink('https://claude.ai/public/artifacts/a5b2a82d-8eb8-4237-84c0-e77601c13153')">
       <h2 class="text-xl font-semibold mb-2">Physics</h2>
-      <p class="text-sm mb-4">Forces, motion, and energy interactions.</p>
-      <button class="btn" onclick="openLink('https://claude.ai/public/artifacts/a5b2a82d-8eb8-4237-84c0-e77601c13153')">Open</button>
+      <p class="text-sm">Forces, motion, and energy interactions.</p>
     </div>
 
     <!-- Energetics Interactives -->
-    <div class="glass p-6 text-center">
+    <div class="glass p-6 text-center" onclick="openLink('https://kwen1510.github.io/energetics_interactives/calorimetry_1.html')">
       <h2 class="text-xl font-semibold mb-2">Calorimetry 1</h2>
-      <p class="text-sm mb-4">Explore heat transfer and temperature changes.</p>
-      <button class="btn" onclick="openLink('https://kwen1510.github.io/energetics_interactives/calorimetry_1.html')">Open</button>
+      <p class="text-sm">Explore heat transfer and temperature changes.</p>
     </div>
 
-    <div class="glass p-6 text-center">
+    <div class="glass p-6 text-center" onclick="openLink('https://kwen1510.github.io/energetics_interactives/calorimetry_2.html')">
       <h2 class="text-xl font-semibold mb-2">Calorimetry 2</h2>
-      <p class="text-sm mb-4">Advanced calorimetry and enthalpy calculations.</p>
-      <button class="btn" onclick="openLink('https://kwen1510.github.io/energetics_interactives/calorimetry_2.html')">Open</button>
+      <p class="text-sm">Advanced calorimetry and enthalpy calculations.</p>
     </div>
 
-    <div class="glass p-6 text-center">
+    <div class="glass p-6 text-center" onclick="openLink('https://kwen1510.github.io/energetics_interactives/energy_cycle_1.html')">
       <h2 class="text-xl font-semibold mb-2">Energy Cycle 1</h2>
-      <p class="text-sm mb-4">Visualise energy transformations.</p>
-      <button class="btn" onclick="openLink('https://kwen1510.github.io/energetics_interactives/energy_cycle_1.html')">Open</button>
+      <p class="text-sm">Visualise energy transformations.</p>
     </div>
 
-    <div class="glass p-6 text-center">
+    <div class="glass p-6 text-center" onclick="openLink('https://kwen1510.github.io/energetics_interactives/energy_cycle_2.html')">
       <h2 class="text-xl font-semibold mb-2">Energy Cycle 2</h2>
-      <p class="text-sm mb-4">Further exploration of reaction energetics.</p>
-      <button class="btn" onclick="openLink('https://kwen1510.github.io/energetics_interactives/energy_cycle_2.html')">Open</button>
+      <p class="text-sm">Further exploration of reaction energetics.</p>
     </div>
 
-    <div class="glass p-6 text-center">
+    <div class="glass p-6 text-center" onclick="openLink('https://kwen1510.github.io/energetics_interactives/energy_level_1.html')">
       <h2 class="text-xl font-semibold mb-2">Energy Level 1</h2>
-      <p class="text-sm mb-4">Atomic energy level diagrams and transitions.</p>
-      <button class="btn" onclick="openLink('https://kwen1510.github.io/energetics_interactives/energy_level_1.html')">Open</button>
+      <p class="text-sm">Atomic energy level diagrams and transitions.</p>
     </div>
 
-    <div class="glass p-6 text-center">
+    <div class="glass p-6 text-center" onclick="openLink('https://kwen1510.github.io/energetics_interactives/energy_level_2.html')">
       <h2 class="text-xl font-semibold mb-2">Energy Level 2</h2>
-      <p class="text-sm mb-4">Advanced analysis of electronic transitions.</p>
-      <button class="btn" onclick="openLink('https://kwen1510.github.io/energetics_interactives/energy_level_2.html')">Open</button>
+      <p class="text-sm">Advanced analysis of electronic transitions.</p>
     </div>
 
   </div>
