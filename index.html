@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Science Interactives</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: radial-gradient(circle at top left, #eef2ff, #e0f2fe);
+      font-family: 'Inter', sans-serif;
+    }
+    .card {
+      @apply bg-white rounded-2xl shadow-md p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-200 cursor-pointer;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col items-center p-8">
+  <h1 class="text-4xl font-bold mb-8 text-blue-700">Science Interactives</h1>
+
+  <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-5xl w-full">
+
+    <!-- Claude projects -->
+    <div class="card" onclick="openLink('https://claude.ai/public/artifacts/d4d96039-2d5a-4e94-a711-53e990b4a21a')">
+      <h2 class="text-xl font-semibold text-gray-800 mb-2">Boltzmann</h2>
+      <p class="text-gray-600">Interactive on statistical physics and energy distributions.</p>
+    </div>
+
+    <div class="card" onclick="openLink('https://claude.ai/public/artifacts/63ae4df2-cba6-43b7-ba65-1c725fb2b547')">
+      <h2 class="text-xl font-semibold text-gray-800 mb-2">Demand and Supply</h2>
+      <p class="text-gray-600">Interactive exploring economics and market equilibrium.</p>
+    </div>
+
+    <div class="card" onclick="openLink('https://claude.ai/public/artifacts/a5b2a82d-8eb8-4237-84c0-e77601c13153')">
+      <h2 class="text-xl font-semibold text-gray-800 mb-2">Physics</h2>
+      <p class="text-gray-600">Interactive concepts in motion, forces, and energy.</p>
+    </div>
+
+    <!-- Energetics interactives -->
+    <div class="card" onclick="openLink('https://kwen1510.github.io/energetics_interactives/0')">
+      <h2 class="text-xl font-semibold text-gray-800 mb-2">Calorimetry 1</h2>
+      <p class="text-gray-600">Explore heat transfer and temperature changes.</p>
+    </div>
+
+    <div class="card" onclick="openLink('https://kwen1510.github.io/energetics_interactives/1')">
+      <h2 class="text-xl font-semibold text-gray-800 mb-2">Calorimetry 2</h2>
+      <p class="text-gray-600">Advanced calorimetry and enthalpy calculations.</p>
+    </div>
+
+    <div class="card" onclick="openLink('https://kwen1510.github.io/energetics_interactives/2')">
+      <h2 class="text-xl font-semibold text-gray-800 mb-2">Energy Cycle 1</h2>
+      <p class="text-gray-600">Visualise energy transformations and conservation.</p>
+    </div>
+
+    <div class="card" onclick="openLink('https://kwen1510.github.io/energetics_interactives/3')">
+      <h2 class="text-xl font-semibold text-gray-800 mb-2">Energy Cycle 2</h2>
+      <p class="text-gray-600">Further exploration of reaction energetics.</p>
+    </div>
+
+    <div class="card" onclick="openLink('https://kwen1510.github.io/energetics_interactives/4')">
+      <h2 class="text-xl font-semibold text-gray-800 mb-2">Energy Level 1</h2>
+      <p class="text-gray-600">Interactive diagrams of atomic energy levels.</p>
+    </div>
+
+    <div class="card" onclick="openLink('https://kwen1510.github.io/energetics_interactives/5')">
+      <h2 class="text-xl font-semibold text-gray-800 mb-2">Energy Level 2</h2>
+      <p class="text-gray-600">Advanced energy level transitions and bonding.</p>
+    </div>
+
+  </div>
+
+  <footer class="mt-10 text-gray-500 text-sm">
+    © 2025 Science Interactives | Created by Kuang Wen Chan
+  </footer>
+
+  <script>
+    function openLink(url) {
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
