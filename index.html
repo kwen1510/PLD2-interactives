@@ -7,11 +7,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
-      background: linear-gradient(135deg, #a5b4fc, #bfdbfe, #bae6fd);
+      background: linear-gradient(135deg, #dbeafe, #bfdbfe, #93c5fd);
       background-size: 400% 400%;
       animation: gradientShift 15s ease infinite;
       font-family: 'Inter', sans-serif;
-      min-height: 100vh;
+      color: #000;
     }
 
     @keyframes gradientShift {
@@ -21,90 +21,98 @@
     }
 
     .glass {
-      backdrop-filter: blur(16px) saturate(150%);
-      -webkit-backdrop-filter: blur(16px) saturate(150%);
-      background-color: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(14px) saturate(180%);
+      -webkit-backdrop-filter: blur(14px) saturate(180%);
+      background-color: rgba(255, 255, 255, 0.6);
       border-radius: 20px;
-      border: 1px solid rgba(255, 255, 255, 0.3);
+      border: 1px solid rgba(0, 0, 0, 0.1);
       transition: all 0.25s ease;
     }
 
     .glass:hover {
-      background-color: rgba(255, 255, 255, 0.4);
+      background-color: rgba(255, 255, 255, 0.85);
       transform: translateY(-5px);
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     }
 
     .btn {
-      @apply px-4 py-2 mt-3 text-sm font-semibold text-blue-700 bg-white/70 rounded-xl hover:bg-white transition;
+      @apply px-4 py-2 mt-3 text-sm font-semibold text-black bg-white/70 rounded-xl hover:bg-white transition;
+    }
+
+    h2 {
+      color: #000;
+    }
+
+    p {
+      color: #222;
     }
   </style>
 </head>
 <body class="flex flex-col items-center justify-center px-6 py-10">
 
-  <h1 class="text-4xl md:text-5xl font-bold text-white drop-shadow-lg mb-10">Science Interactives</h1>
+  <h1 class="text-4xl md:text-5xl font-bold text-black drop-shadow mb-10">Science Interactives</h1>
 
   <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-6xl w-full">
 
-    <!-- Claude links -->
+    <!-- Claude Links -->
     <div class="glass p-6 text-center">
-      <h2 class="text-xl font-semibold text-white mb-2">Boltzmann</h2>
-      <p class="text-sm text-blue-100 mb-4">Statistical physics and energy distributions.</p>
+      <h2 class="text-xl font-semibold mb-2">Boltzmann</h2>
+      <p class="text-sm mb-4">Statistical physics and energy distributions.</p>
       <button class="btn" onclick="openLink('https://claude.ai/public/artifacts/d4d96039-2d5a-4e94-a711-53e990b4a21a')">Open</button>
     </div>
 
     <div class="glass p-6 text-center">
-      <h2 class="text-xl font-semibold text-white mb-2">Demand & Supply</h2>
-      <p class="text-sm text-blue-100 mb-4">Market equilibrium and economic behavior.</p>
+      <h2 class="text-xl font-semibold mb-2">Demand & Supply</h2>
+      <p class="text-sm mb-4">Market equilibrium and economic behavior.</p>
       <button class="btn" onclick="openLink('https://claude.ai/public/artifacts/63ae4df2-cba6-43b7-ba65-1c725fb2b547')">Open</button>
     </div>
 
     <div class="glass p-6 text-center">
-      <h2 class="text-xl font-semibold text-white mb-2">Physics</h2>
-      <p class="text-sm text-blue-100 mb-4">Forces, motion, and energy interactions.</p>
+      <h2 class="text-xl font-semibold mb-2">Physics</h2>
+      <p class="text-sm mb-4">Forces, motion, and energy interactions.</p>
       <button class="btn" onclick="openLink('https://claude.ai/public/artifacts/a5b2a82d-8eb8-4237-84c0-e77601c13153')">Open</button>
     </div>
 
     <!-- Energetics Interactives -->
     <div class="glass p-6 text-center">
-      <h2 class="text-xl font-semibold text-white mb-2">Calorimetry 1</h2>
-      <p class="text-sm text-blue-100 mb-4">Explore heat transfer and temperature changes.</p>
+      <h2 class="text-xl font-semibold mb-2">Calorimetry 1</h2>
+      <p class="text-sm mb-4">Explore heat transfer and temperature changes.</p>
       <button class="btn" onclick="openLink('https://kwen1510.github.io/energetics_interactives/calorimetry_1.html')">Open</button>
     </div>
 
     <div class="glass p-6 text-center">
-      <h2 class="text-xl font-semibold text-white mb-2">Calorimetry 2</h2>
-      <p class="text-sm text-blue-100 mb-4">Advanced calorimetry and enthalpy calculations.</p>
+      <h2 class="text-xl font-semibold mb-2">Calorimetry 2</h2>
+      <p class="text-sm mb-4">Advanced calorimetry and enthalpy calculations.</p>
       <button class="btn" onclick="openLink('https://kwen1510.github.io/energetics_interactives/calorimetry_2.html')">Open</button>
     </div>
 
     <div class="glass p-6 text-center">
-      <h2 class="text-xl font-semibold text-white mb-2">Energy Cycle 1</h2>
-      <p class="text-sm text-blue-100 mb-4">Visualise energy transformations.</p>
+      <h2 class="text-xl font-semibold mb-2">Energy Cycle 1</h2>
+      <p class="text-sm mb-4">Visualise energy transformations.</p>
       <button class="btn" onclick="openLink('https://kwen1510.github.io/energetics_interactives/energy_cycle_1.html')">Open</button>
     </div>
 
     <div class="glass p-6 text-center">
-      <h2 class="text-xl font-semibold text-white mb-2">Energy Cycle 2</h2>
-      <p class="text-sm text-blue-100 mb-4">Further exploration of reaction energetics.</p>
+      <h2 class="text-xl font-semibold mb-2">Energy Cycle 2</h2>
+      <p class="text-sm mb-4">Further exploration of reaction energetics.</p>
       <button class="btn" onclick="openLink('https://kwen1510.github.io/energetics_interactives/energy_cycle_2.html')">Open</button>
     </div>
 
     <div class="glass p-6 text-center">
-      <h2 class="text-xl font-semibold text-white mb-2">Energy Level 1</h2>
-      <p class="text-sm text-blue-100 mb-4">Atomic energy level diagrams and transitions.</p>
+      <h2 class="text-xl font-semibold mb-2">Energy Level 1</h2>
+      <p class="text-sm mb-4">Atomic energy level diagrams and transitions.</p>
       <button class="btn" onclick="openLink('https://kwen1510.github.io/energetics_interactives/energy_level_1.html')">Open</button>
     </div>
 
     <div class="glass p-6 text-center">
-      <h2 class="text-xl font-semibold text-white mb-2">Energy Level 2</h2>
-      <p class="text-sm text-blue-100 mb-4">Advanced analysis of electronic transitions.</p>
+      <h2 class="text-xl font-semibold mb-2">Energy Level 2</h2>
+      <p class="text-sm mb-4">Advanced analysis of electronic transitions.</p>
       <button class="btn" onclick="openLink('https://kwen1510.github.io/energetics_interactives/energy_level_2.html')">Open</button>
     </div>
 
   </div>
 
-  <footer class="mt-10 text-blue-100 text-sm">
+  <footer class="mt-10 text-gray-700 text-sm">
     © 2025 Science Interactives · Designed by Kuang Wen Chan
   </footer>
 
